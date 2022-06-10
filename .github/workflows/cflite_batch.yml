@@ -15,7 +15,7 @@ jobs:
         - address
         # Override this with the sanitizers you want.
         # - undefined
-        - coverage
+        # - memory
     steps:
     - name: Build Fuzzers (${{ matrix.sanitizer }})
       id: build
