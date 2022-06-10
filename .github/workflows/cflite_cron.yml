@@ -1,5 +1,7 @@
 name: ClusterFuzzLite cron tasks
 on:
+  push:
+    branches: ['master']
   schedule:
     - cron: '40 15 * * *'  # Once a day at midnight.
 permissions: read-all
